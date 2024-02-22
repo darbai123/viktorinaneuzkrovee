@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>viktorina</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+
+
+    <header>
+      
+      <a href="https://darbai123.github.io/myHomePage/index.html#work" class="back__btn">Grįžti</a>
+      <h1 class="h1">AUDI/BMW viktorina</h1>
+      <nav>
+        <ul>
+          <li><a href="#student-info">INFO</a></li>
+          <li><a href="#html-questions">AUDI</a></li>
+          <li><a href="#css-questions">BMW</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main>
+      <form method="post" action="">
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Dalyvio informacija</h2>
+          <div class="info">
+            <label for="student-name">Vardas:</label>
+            <input type="text" name="student-name" id="student-name" />
+          </div>
+          <div class="info">
+            <label for="student-email">Email:</label>
+            <input type="email" name="student-email" id="student-email"/>
+          </div>
+          <div class="info">
+            <label for="birth-date">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
+            <input type="date" name="birth-date" id="birth-date" />
+          </div>
+        </section>
+        <section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions">AUDI</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="html-question-one">
+              <legend>
+                Audi varomas priekiniais ratais, ar galiniais?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="q1-a1" name="q1" value="true" />
+                    Priekiniais
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="q1-a2" name="q1" value="false" />
+                    Galiniais
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="html-question-two">
+              <legend>
+                Kur gaminamas Audi?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input type="radio" id="q2-a1" name="q2" value="true" />
+                    Vokietijoje
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="q2-a2" name="q2" value="false" />
+                    Anglijoje
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions">BMW</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="customer">Ar pirktum BMW markės automobilį?</label>
+            </div>
+            <div class="answer">
+              <select name="customer" id="customer" required>
+                <option value="">Select an option</option>
+                <option value="yes">Taip</option>
+                <option value="no">Ne</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="css-textarea">Ar turi kokių klausimų:</label>
+            </div>
+            <div class="answer">
+              <textarea id="css-textarea" name="css-questions" rows="5" cols="24" placeholder="BMW remontas pigus..?"></textarea>
+            </div>
+          </div>
+        </section>
+        <button type="submit"><a href="https://darbai123.github.io/myHomePage/index.html#work" class="siusti">Siūsti</a></button>
+      </form>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="logo">
+          <img id="logo" src="img/logo8.png" />
+        </div>
+        <div class="address">
+          <address>
+            Lietuva<br>
+            Lietuvos kraštas<br>
+            Lietuvos gatvė<br>
+            445-554-13<br>
+          </address>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
